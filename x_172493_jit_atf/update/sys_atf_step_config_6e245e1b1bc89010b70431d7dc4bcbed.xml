@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step_config">
+    <sys_atf_step_config action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <batch_order_constraint/>
+        <can_mutate_page>false</can_mutate_page>
+        <category display_value="Server">317c4dc20b202200a8d7a12cf6673aa8</category>
+        <class_name/>
+        <class_type>script</class_type>
+        <deprecated>false</deprecated>
+        <description_generator><![CDATA[function generateDescription() {
+    // the global variable 'step' represents the current glide record
+	var grpName = step.inputs.u_group.name;
+	var usrName = step.inputs.u_approval_user.name;
+	var dycUser = step.inputs.u_dynamic_approval.number;
+	
+	
+	var description = "";
+	
+	
+	if(grpName != '' && usrName !='')
+    description = "User "+usrName+" from the group "+grpName+" will be avialable for impersonation for approval activities.";
+	else if(grpName != '' && usrName =='')
+    description = "An user from the group "+grpName+" will be avialable for impersonation for approval activities.";
+	else if(usrName != '' && grpName == '')
+    description = "User "+usrName+" will be avialable for impersonation for approval activities.";
+	else 
+    description = "An dynamically picked approval User will be avialable for impersonation for approval activities.";
+	// your code here
+	return description;
+}
+ generateDescription();
+]]></description_generator>
+        <html_description><![CDATA[<p>Select a group or an Approver.</p>
+<p>User can also select Dynamic approver for an Request.</p>
+<p>The output user can be used for impersonation to perform approval activities.</p>]]></html_description>
+        <icon>icon-article-document</icon>
+        <inputs/>
+        <name>V1.4.0 Approval User From Group</name>
+        <order>2000</order>
+        <outputs/>
+        <step_env display_value="Server - Independent">6c2bcea1870312009dccc9ded0e3ecca</step_env>
+        <step_execution_generator><![CDATA[(function executeStep(inputs, outputs, stepResult, timeout) {
+	
+    var aGroup = inputs.u_group;
+    var aUser = inputs.u_approval_user;   
+    var dApprover = inputs.u_dynamic_approval;
+    try {
+        if (aUser != '') { //if user is present to impersonate
+            outputs.table = 'sys_user';
+            outputs.u_approval_user_out = aUser;
+            stepResult.setOutputMessage('Success!');
+            stepResult.setSuccess();
+            return;
+        } else if (aGroup != '') { //if only group is present then select a random approver from the group
+            var gMember = new GlideRecord('sys_user_grmember');
+            gMember.addQuery('group', aGroup);
+            gMember.query();
+            if (gMember.next()) {
+                outputs.table = 'sys_user';
+                outputs.u_approval_user_out = gMember.user.sys_id;
+                stepResult.setOutputMessage('Success!');
+                stepResult.setSuccess();
+                return;
+            }
+        } else if (dApprover != '' && aUser == '' && aGroup == '') { // if task based requested approval is required
+            var app = new GlideRecord('sysapproval_approver');
+            app.addQuery('document_id', dApprover);
+            app.addQuery('state', 'requested');
+            app.query();
+            if (app.next()) {
+                outputs.table = 'sys_user';
+                outputs.u_approval_user_out = app.approver.sys_id;
+                stepResult.setOutputMessage('Success!');
+                stepResult.setSuccess();
+                return;
+            }
+        }
+    } catch (e) {
+        stepResult.setOutputMessage('Failure!');
+        stepResult.setFailed();
+        return;
+
+    }
+}(inputs, outputs, stepResult, timeout));]]></step_execution_generator>
+        <sys_class_name>sys_atf_step_config</sys_class_name>
+        <sys_created_by>shubhendra.singh</sys_created_by>
+        <sys_created_on>2020-04-13 20:17:12</sys_created_on>
+        <sys_id>6e245e1b1bc89010b70431d7dc4bcbed</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>V1.4.0 Approval User From Group</sys_name>
+        <sys_package display_value="JIT ATF Configurator" source="x_172493_jit_atf">a95f321e1b841010b70431d7dc4bcb50</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JIT ATF Configurator">a95f321e1b841010b70431d7dc4bcb50</sys_scope>
+        <sys_update_name>sys_atf_step_config_6e245e1b1bc89010b70431d7dc4bcbed</sys_update_name>
+        <sys_updated_by>shubhendra.singh</sys_updated_by>
+        <sys_updated_on>2020-04-17 22:18:33</sys_updated_on>
+        <template_reminder>An Approver to impersonate for Approval activities</template_reminder>
+        <type display_value="Test Step" name="sys_atf_step">d3ccc615983500107f2c2ed01a1f16e4</type>
+        <wizard_redirect/>
+    </sys_atf_step_config>
+    <sys_translated_text action="delete_multiple" query="documentkey=6e245e1b1bc89010b70431d7dc4bcbed"/>
+    <sys_variable_value action="delete_multiple" query="document_key=6e245e1b1bc89010b70431d7dc4bcbed"/>
+</record_update>

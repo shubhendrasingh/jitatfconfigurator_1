@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_approval_user_out" label="Approval User Out" language="en" table="var__m_atf_output_variable_6e245e1b1bc89010b70431d7dc4bcbed">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_approval_user_out</element>
+            <help/>
+            <hint/>
+            <label>Approval User Out</label>
+            <language>en</language>
+            <name>var__m_atf_output_variable_6e245e1b1bc89010b70431d7dc4bcbed</name>
+            <plural>Approval User Out</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>shubhendra.singh</sys_created_by>
+            <sys_created_on>2020-04-17 21:58:01</sys_created_on>
+            <sys_id>9e91df201b5c5410b70431d7dc4bcbc8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Approval User Out</sys_name>
+            <sys_package display_value="JIT ATF Configurator" source="x_172493_jit_atf">a95f321e1b841010b70431d7dc4bcb50</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="JIT ATF Configurator">a95f321e1b841010b70431d7dc4bcb50</sys_scope>
+            <sys_update_name>sys_documentation_var__m_atf_output_variable_6e245e1b1bc89010b70431d7dc4bcbed_u_approval_user_out_en</sys_update_name>
+            <sys_updated_by>shubhendra.singh</sys_updated_by>
+            <sys_updated_on>2020-04-17 21:58:01</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="type" label="Type" language="en" table="x_172493_jit_atf_test_case">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>type</element>
+            <help/>
+            <hint/>
+            <label>Type</label>
+            <language>en</language>
+            <name>x_172493_jit_atf_test_case</name>
+            <plural>Types</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-04-10 22:29:27</sys_created_on>
+            <sys_id>62a59f9a1bc41010b70431d7dc4bcbe6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Type</sys_name>
+            <sys_package display_value="JIT ATF Configurator" source="x_172493_jit_atf">a95f321e1b841010b70431d7dc4bcb50</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="JIT ATF Configurator">a95f321e1b841010b70431d7dc4bcb50</sys_scope>
+            <sys_update_name>sys_documentation_x_172493_jit_atf_test_case_type_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-04-10 22:29:27</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

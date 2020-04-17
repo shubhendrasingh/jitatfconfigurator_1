@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Test Suite" max_length="40" name="x_172493_jit_atf_test_suite" sizeclass="1" type="collection">
+        <element label="Description" max_length="8000" name="description" type="string_full_utf8"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+    </element>
+</database>

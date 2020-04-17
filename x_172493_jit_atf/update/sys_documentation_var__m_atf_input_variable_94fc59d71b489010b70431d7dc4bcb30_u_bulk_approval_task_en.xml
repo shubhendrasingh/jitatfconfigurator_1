@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_bulk_approval_task" label="Bulk Approval Task" language="en" table="var__m_atf_input_variable_94fc59d71b489010b70431d7dc4bcb30">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_bulk_approval_task</element>
+            <help/>
+            <hint/>
+            <label>Bulk Approval Task</label>
+            <language>en</language>
+            <name>var__m_atf_input_variable_94fc59d71b489010b70431d7dc4bcb30</name>
+            <plural>Bulk Approval Task</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>shubhendra.singh</sys_created_by>
+            <sys_created_on>2020-04-13 16:17:24</sys_created_on>
+            <sys_id>794d551b1b489010b70431d7dc4bcbc4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Bulk Approval Task</sys_name>
+            <sys_package display_value="JIT ATF Configurator" source="x_172493_jit_atf">a95f321e1b841010b70431d7dc4bcb50</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="JIT ATF Configurator">a95f321e1b841010b70431d7dc4bcb50</sys_scope>
+            <sys_update_name>sys_documentation_var__m_atf_input_variable_94fc59d71b489010b70431d7dc4bcb30_u_bulk_approval_task_en</sys_update_name>
+            <sys_updated_by>shubhendra.singh</sys_updated_by>
+            <sys_updated_on>2020-04-13 16:17:24</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

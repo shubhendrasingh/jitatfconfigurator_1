@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="DELETE">
+        <cleared>true</cleared>
+        <disabled>ignore</disabled>
+        <field>variable_json</field>
+        <mandatory>true</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-11 00:07:09</sys_created_on>
+        <sys_id>89eb6b1e1b081010b70431d7dc4bcb64</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>variable_json</sys_name>
+        <sys_package display_value="JIT ATF Configurator" source="x_172493_jit_atf">a95f321e1b841010b70431d7dc4bcb50</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JIT ATF Configurator">a95f321e1b841010b70431d7dc4bcb50</sys_scope>
+        <sys_update_name>sys_ui_policy_action_89eb6b1e1b081010b70431d7dc4bcb64</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-11 00:07:09</sys_updated_on>
+        <table>x_172493_jit_atf_test_case</table>
+        <ui_policy display_value="Type Change">fe8b671e1b081010b70431d7dc4bcb4e</ui_policy>
+        <visible>true</visible>
+    </sys_ui_policy_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="JIT ATF Configurator">a95f321e1b841010b70431d7dc4bcb50</application>
+        <file_path/>
+        <instance_id>f3d19df3db7677443050ac44d496195f</instance_id>
+        <instance_name>dev89633</instance_name>
+        <name>sys_ui_policy_action_89eb6b1e1b081010b70431d7dc4bcb64</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action"><sys_ui_policy_action action="INSERT_OR_UPDATE"><cleared>true</cleared><disabled>ignore</disabled><field>variable_json</field><mandatory>true</mandatory><sys_class_name>sys_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-04-11 00:07:09</sys_created_on><sys_id>89eb6b1e1b081010b70431d7dc4bcb64</sys_id><sys_mod_count>0</sys_mod_count><sys_name>variable_json</sys_name><sys_package display_value="JIT ATF Configurator" source="x_172493_jit_atf">a95f321e1b841010b70431d7dc4bcb50</sys_package><sys_policy/><sys_scope display_value="JIT ATF Configurator">a95f321e1b841010b70431d7dc4bcb50</sys_scope><sys_update_name>sys_ui_policy_action_89eb6b1e1b081010b70431d7dc4bcb64</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-04-11 00:07:09</sys_updated_on><table>x_172493_jit_atf_test_case</table><ui_policy display_value="Type Change">fe8b671e1b081010b70431d7dc4bcb4e</ui_policy><visible>true</visible></sys_ui_policy_action></record_update>]]></payload>
+        <payload_hash>1988986473</payload_hash>
+        <record_name>variable_json</record_name>
+        <reverted_from/>
+        <source>2d5f321e1b841010b70431d7dc4bcb52</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-11 00:07:09</sys_created_on>
+        <sys_id>f10ce31e1b081010b70431d7dc4bcbe6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>171668fc1da0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-11 00:07:09</sys_updated_on>
+        <type>UI Policy Action</type>
+        <update_guid>3d0ce31ea50810107e4ab0bb658b91e5</update_guid>
+        <update_guid_history>3d0ce31ea50810107e4ab0bb658b91e5:1988986473</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-11 00:27:41</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_policy_action">sys_ui_policy_action</sys_db_object>
+        <sys_id>76ff0d2262094f08965e873f6fcf4ca9</sys_id>
+        <sys_metadata>89eb6b1e1b081010b70431d7dc4bcb64</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>variable_json</sys_name>
+        <sys_package display_value="JIT ATF Configurator" source="x_172493_jit_atf">a95f321e1b841010b70431d7dc4bcb50</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="JIT ATF Configurator">a95f321e1b841010b70431d7dc4bcb50</sys_scope>
+        <sys_scope_delete display_value="">2db1596f993d4a2a9d316f5c3e1b0564</sys_scope_delete>
+        <sys_update_name>sys_ui_policy_action_89eb6b1e1b081010b70431d7dc4bcb64</sys_update_name>
+        <sys_update_version display_value="sys_ui_policy_action_89eb6b1e1b081010b70431d7dc4bcb64">f10ce31e1b081010b70431d7dc4bcbe6</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-11 00:27:41</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

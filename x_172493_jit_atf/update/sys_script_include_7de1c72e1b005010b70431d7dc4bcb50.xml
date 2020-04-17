@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_172493_jit_atf.JITAtfUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>JITAtfUtils</name>
+        <script><![CDATA[var JITAtfUtils = Class.create();
+JITAtfUtils.prototype = {
+    initialize: function() {},
+
+    createItem: function(parm1) {
+
+        var tCase = new GlideRecord('x_172493_jit_atf_test_case');
+        tCase.get(parm1.toString());
+        var t = JSON.parse(tCase.variable_json);
+        var cart = new sn_sc.CartJS('cart1');
+        var item = {
+            'sysparm_id': tCase.catalog_item.toString(),
+            'sysparm_quantity': '1',
+            'variables': t
+        };
+
+        var cartDetails = cart.addToCart(item);
+        cart.setRequestedFor(tCase.requested_for.toString());
+        var checkoutInfo = cart.checkoutCart();
+        var req = JSON.stringify(checkoutInfo);
+        if (req.toString().substr(45, 32) != '')
+            return req.toString().substr(45, 32);
+        else
+            return "Error in Execution of Request";
+
+    },
+
+    singleServerApproval: function(testApp, appAction) {
+        var app = new GlideRecord('sysapproval_approver');
+        app.addQuery('document_id', testApp);
+        app.addQuery('state', 'requested');
+        app.query();
+        if (app.next()) {
+            app.state = appAction;
+            app.update();
+            return true;
+        } else
+            return false;
+    },
+
+    getGroupMembers: function(uGroup) {
+        if (uGroup != '' || uGroup != null) {
+            var gMem = new GlideRecord('sys_user_grmember');
+            gMem.addQuery('group', uGroup);
+            gMem.query();
+            var uSys = '';
+            while (gMem.next()) {
+                uSys += gMem.user.sys_id + ",";
+            }
+            var str = uSys.substring(0, uSys.length - 1);
+            return "sys_idIN" + str;
+        } else
+            return "";
+
+    },
+
+    createTableRec: function(uCase) {
+
+        var t = new GlideRecord('x_172493_jit_atf_test_case');
+        t.get(uCase.toString());
+
+        var arr = t.field_values.split('^');
+
+        var newRec = new GlideRecord(t.table);
+        newRec.newRecord();
+
+        for (var i = 0; i < arr.length - 1; i++) {
+            var ss = arr[i].split('=');
+            newRec.setValue(ss[0].toString(), ss[1].toString());
+        }
+
+        newRec.insert();
+        if (newRec.sys_id.toString().length != 32) {
+            return 'Error creating Record, please ensure Case has all mandatory inputs.';
+        } else {
+            return newRec.sys_id.toString() + "^" + t.table;
+        }
+    },
+
+
+
+    type: 'JITAtfUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-11 15:41:54</sys_created_on>
+        <sys_id>7de1c72e1b005010b70431d7dc4bcb50</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>JITAtfUtils</sys_name>
+        <sys_package display_value="JIT ATF Configurator" source="x_172493_jit_atf">a95f321e1b841010b70431d7dc4bcb50</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="JIT ATF Configurator">a95f321e1b841010b70431d7dc4bcb50</sys_scope>
+        <sys_update_name>sys_script_include_7de1c72e1b005010b70431d7dc4bcb50</sys_update_name>
+        <sys_updated_by>shubhendra.singh</sys_updated_by>
+        <sys_updated_on>2020-04-17 22:12:49</sys_updated_on>
+    </sys_script_include>
+</record_update>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_first_record" label="First Record" language="en" table="var__m_atf_output_variable_f7c901001b541410b70431d7dc4bcb67">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_first_record</element>
+            <help/>
+            <hint/>
+            <label>First Record</label>
+            <language>en</language>
+            <name>var__m_atf_output_variable_f7c901001b541410b70431d7dc4bcb67</name>
+            <plural>First Record</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>shubhendra.singh</sys_created_by>
+            <sys_created_on>2020-04-16 00:08:33</sys_created_on>
+            <sys_id>fa4c11c81b541410b70431d7dc4bcbbb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>First Record</sys_name>
+            <sys_package display_value="JIT ATF Configurator" source="x_172493_jit_atf">a95f321e1b841010b70431d7dc4bcb50</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="JIT ATF Configurator">a95f321e1b841010b70431d7dc4bcb50</sys_scope>
+            <sys_update_name>sys_documentation_var__m_atf_output_variable_f7c901001b541410b70431d7dc4bcb67_u_first_record_en</sys_update_name>
+            <sys_updated_by>shubhendra.singh</sys_updated_by>
+            <sys_updated_on>2020-04-16 00:08:33</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="u_approval_action" table="var__m_atf_input_variable_94fc59d71b489010b70431d7dc4bcb30" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_approval_action</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Approved</label>
+            <language>en</language>
+            <name>var__m_atf_input_variable_94fc59d71b489010b70431d7dc4bcb30</name>
+            <sequence>1</sequence>
+            <sys_created_by>shubhendra.singh</sys_created_by>
+            <sys_created_on>2020-04-16 23:08:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a8f796581b505410b70431d7dc4bcb91</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>shubhendra.singh</sys_updated_by>
+            <sys_updated_on>2020-04-16 23:09:35</sys_updated_on>
+            <value>approved</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_approval_action</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Rejected</label>
+            <language>en</language>
+            <name>var__m_atf_input_variable_94fc59d71b489010b70431d7dc4bcb30</name>
+            <sequence>2</sequence>
+            <sys_created_by>shubhendra.singh</sys_created_by>
+            <sys_created_on>2020-04-16 23:08:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6b08d6d41b505410b70431d7dc4bcbba</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>shubhendra.singh</sys_updated_by>
+            <sys_updated_on>2020-04-16 23:09:48</sys_updated_on>
+            <value>rejected</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>u_approval_action</element>
+            <name>var__m_atf_input_variable_94fc59d71b489010b70431d7dc4bcb30</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>shubhendra.singh</sys_created_by>
+            <sys_created_on>2020-04-16 23:08:00</sys_created_on>
+            <sys_id>350892581b505410b70431d7dc4bcb9f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_approval_action</sys_name>
+            <sys_package display_value="JIT ATF Configurator" source="x_172493_jit_atf">a95f321e1b841010b70431d7dc4bcb50</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="JIT ATF Configurator">a95f321e1b841010b70431d7dc4bcb50</sys_scope>
+            <sys_update_name>sys_choice_var__m_atf_input_variable_94fc59d71b489010b70431d7dc4bcb30_u_approval_action</sys_update_name>
+            <sys_updated_by>shubhendra.singh</sys_updated_by>
+            <sys_updated_on>2020-04-16 23:08:00</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="9cdc07ac1b1c5410b70431d7dc4bcba5" sys_domain="global" table="var__m_atf_input_variable_6e245e1b1bc89010b70431d7dc4bcbed" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_group</element>
+            <position>0</position>
+            <sys_created_by>shubhendra.singh</sys_created_by>
+            <sys_created_on>2020-04-17 21:37:33</sys_created_on>
+            <sys_id>2aec47ac1b1c5410b70431d7dc4bcbc5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="var__m_atf_input_variable_6e245e1b1bc89010b70431d7dc4bcbed" sys_domain="global" view="Default view">9cdc07ac1b1c5410b70431d7dc4bcba5</sys_ui_section>
+            <sys_updated_by>shubhendra.singh</sys_updated_by>
+            <sys_updated_on>2020-04-17 21:37:33</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_approval_user</element>
+            <position>1</position>
+            <sys_created_by>shubhendra.singh</sys_created_by>
+            <sys_created_on>2020-04-17 21:37:33</sys_created_on>
+            <sys_id>aaec47ac1b1c5410b70431d7dc4bcbc5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="var__m_atf_input_variable_6e245e1b1bc89010b70431d7dc4bcbed" sys_domain="global" view="Default view">9cdc07ac1b1c5410b70431d7dc4bcba5</sys_ui_section>
+            <sys_updated_by>shubhendra.singh</sys_updated_by>
+            <sys_updated_on>2020-04-17 21:37:33</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_dynamic_approval</element>
+            <position>2</position>
+            <sys_created_by>shubhendra.singh</sys_created_by>
+            <sys_created_on>2020-04-17 21:37:33</sys_created_on>
+            <sys_id>2eec47ac1b1c5410b70431d7dc4bcbc5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="var__m_atf_input_variable_6e245e1b1bc89010b70431d7dc4bcbed" sys_domain="global" view="Default view">9cdc07ac1b1c5410b70431d7dc4bcba5</sys_ui_section>
+            <sys_updated_by>shubhendra.singh</sys_updated_by>
+            <sys_updated_on>2020-04-17 21:37:33</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_approval_action</element>
+            <position>3</position>
+            <sys_created_by>shubhendra.singh</sys_created_by>
+            <sys_created_on>2020-04-17 21:47:47</sys_created_on>
+            <sys_id>ec4fcfec1b1c5410b70431d7dc4bcbde</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="var__m_atf_input_variable_6e245e1b1bc89010b70431d7dc4bcbed" sys_domain="global" view="Default view">9cdc07ac1b1c5410b70431d7dc4bcba5</sys_ui_section>
+            <sys_updated_by>shubhendra.singh</sys_updated_by>
+            <sys_updated_on>2020-04-17 21:47:47</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>var__m_atf_input_variable_6e245e1b1bc89010b70431d7dc4bcbed</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>shubhendra.singh</sys_created_by>
+            <sys_created_on>2020-04-17 21:37:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9cdc07ac1b1c5410b70431d7dc4bcba5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>var__m_atf_input_variable_6e245e1b1bc89010b70431d7dc4bcbed</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="JIT ATF Configurator" source="x_172493_jit_atf">a95f321e1b841010b70431d7dc4bcb50</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="JIT ATF Configurator">a95f321e1b841010b70431d7dc4bcb50</sys_scope>
+            <sys_update_name>sys_ui_section_9cdc07ac1b1c5410b70431d7dc4bcba5</sys_update_name>
+            <sys_updated_by>shubhendra.singh</sys_updated_by>
+            <sys_updated_on>2020-04-17 21:37:07</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application/>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Test Suites</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_172493_jit_atf_test_suite</name>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles>x_172493_jit_atf.test_suite_user</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-10 20:53:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>10af725e1b841010b70431d7dc4bcba9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Test Suites</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="JIT ATF Configurator" source="x_172493_jit_atf">a95f321e1b841010b70431d7dc4bcb50</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JIT ATF Configurator">a95f321e1b841010b70431d7dc4bcb50</sys_scope>
+        <sys_update_name>sys_app_module_10af725e1b841010b70431d7dc4bcba9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-10 20:53:11</sys_updated_on>
+        <timeline_page/>
+        <title>Test Suites</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="JIT ATF Configurator">a95f321e1b841010b70431d7dc4bcb50</application>
+        <file_path/>
+        <instance_id>f3d19df3db7677443050ac44d496195f</instance_id>
+        <instance_name>dev89633</instance_name>
+        <name>sys_app_module_10af725e1b841010b70431d7dc4bcba9</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application/><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>Test Suites</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_172493_jit_atf_test_suite</name><order/><override_menu_roles>false</override_menu_roles><query/><report/><roles>x_172493_jit_atf.test_suite_user</roles><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-04-10 20:53:11</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>10af725e1b841010b70431d7dc4bcba9</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Test Suites</sys_name><sys_overrides/><sys_package display_value="JIT ATF Configurator" source="x_172493_jit_atf">a95f321e1b841010b70431d7dc4bcb50</sys_package><sys_policy/><sys_scope display_value="JIT ATF Configurator">a95f321e1b841010b70431d7dc4bcb50</sys_scope><sys_update_name>sys_app_module_10af725e1b841010b70431d7dc4bcba9</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-04-10 20:53:11</sys_updated_on><timeline_page/><title>Test Suites</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>-1630506282</payload_hash>
+        <record_name>Test Suites</record_name>
+        <reverted_from/>
+        <source>2d5f321e1b841010b70431d7dc4bcb52</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-10 23:51:54</sys_created_on>
+        <sys_id>de88239a1b081010b70431d7dc4bcbcb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1716681cc320000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-10 23:51:54</sys_updated_on>
+        <type>Module</type>
+        <update_guid>58af725e638410100d206a368e4f54aa</update_guid>
+        <update_guid_history>58af725e638410100d206a368e4f54aa:-1949222847,58af725e638410100d206a368e4f54aa:-1949222847</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Test Suites">6da8a39a1b081010b70431d7dc4bcbdf</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-10 23:52:24</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>810b32f1975f4aa4a38ba7da90ce4104</sys_id>
+        <sys_metadata>10af725e1b841010b70431d7dc4bcba9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Test Suites</sys_name>
+        <sys_package display_value="JIT ATF Configurator" source="x_172493_jit_atf">a95f321e1b841010b70431d7dc4bcb50</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="JIT ATF Configurator">a95f321e1b841010b70431d7dc4bcb50</sys_scope>
+        <sys_scope_delete display_value="">2db1596f993d4a2a9d316f5c3e1b0564</sys_scope_delete>
+        <sys_update_name>sys_app_module_10af725e1b841010b70431d7dc4bcba9</sys_update_name>
+        <sys_update_version display_value="sys_app_module_10af725e1b841010b70431d7dc4bcba9">de88239a1b081010b70431d7dc4bcbcb</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-10 23:52:24</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step_config">
+    <sys_atf_step_config action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <batch_order_constraint/>
+        <can_mutate_page>false</can_mutate_page>
+        <category display_value="Server">317c4dc20b202200a8d7a12cf6673aa8</category>
+        <class_name/>
+        <class_type>script</class_type>
+        <deprecated>false</deprecated>
+        <description_generator><![CDATA[function generateDescription() {
+    // the global variable 'step' represents the current glide record
+    var description = "An request will be generated for item "+step.inputs.u_case_number.catalog_item.name+" for case number "+step.inputs.u_case_number.number;
+	// your code here
+	return description;
+}
+ generateDescription();
+]]></description_generator>
+        <html_description><![CDATA[<ol style="list-style-position: inside;"><li>Enter the case number which contains detailed information and use case scenarios of different variable values.</li><li>Two output variables will be produced </li></ol>
+<p>                  a. Request Object: This will contain the REQ object for the item.</p>
+<p>                  b. Requested Item Object: This will be the RITM object created within the request.</p>
+<p>           </p>]]></html_description>
+        <icon>icon-article-document</icon>
+        <inputs/>
+        <name>V1.1.0 Create Catalog Request</name>
+        <order>2000</order>
+        <outputs/>
+        <step_env display_value="Server - Independent">6c2bcea1870312009dccc9ded0e3ecca</step_env>
+        <step_execution_generator><![CDATA[(function executeStep(inputs, outputs, stepResult, timeout) {
+
+    var tCase = inputs.u_case_number;
+    try {
+        var req = new x_172493_jit_atf.JITAtfUtils().createItem(tCase);
+		if(req.toString() != "Error in Execution of Request"){
+        var cRequest = new GlideRecord('sc_request');
+			cRequest.get(req);
+			//outputs.table = 'sc_request';
+            outputs.u_request = cRequest.getUniqueValue();
+			var ritm = new GlideRecord('sc_req_item');
+			ritm.addQuery('request',cRequest.getUniqueValue());
+			ritm.query();
+			if(ritm.next()){
+				outputs.u_ritm = ritm.getUniqueValue();
+			}
+        stepResult.setOutputMessage('Success!');
+        stepResult.setSuccess();
+        return;
+		}
+		else{
+		stepResult.setOutputMessage('Error in Execution of Request');
+        stepResult.setFailed();
+        return;	
+		}
+    } catch (e) {
+        stepResult.setOutputMessage('Failure!');
+        stepResult.setFailed();
+        return;
+    }
+}(inputs, outputs, stepResult, timeout));]]></step_execution_generator>
+        <sys_class_name>sys_atf_step_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-11 16:25:39</sys_created_on>
+        <sys_id>5d8a8b2e1b005010b70431d7dc4bcbb4</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>V1.1.0 Create Catalog Request</sys_name>
+        <sys_package display_value="JIT ATF Configurator" source="x_172493_jit_atf">a95f321e1b841010b70431d7dc4bcb50</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JIT ATF Configurator">a95f321e1b841010b70431d7dc4bcb50</sys_scope>
+        <sys_update_name>sys_atf_step_config_5d8a8b2e1b005010b70431d7dc4bcbb4</sys_update_name>
+        <sys_updated_by>shubhendra.singh</sys_updated_by>
+        <sys_updated_on>2020-04-16 20:10:39</sys_updated_on>
+        <template_reminder>Helps in creating service catalog order with input variables and ordering of the cart</template_reminder>
+        <type display_value="Test Step" name="sys_atf_step">d3ccc615983500107f2c2ed01a1f16e4</type>
+        <wizard_redirect/>
+    </sys_atf_step_config>
+    <sys_translated_text action="delete_multiple" query="documentkey=5d8a8b2e1b005010b70431d7dc4bcbb4"/>
+    <sys_variable_value action="delete_multiple" query="document_key=5d8a8b2e1b005010b70431d7dc4bcbb4"/>
+</record_update>

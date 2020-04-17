@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step_config">
+    <sys_atf_step_config action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <batch_order_constraint/>
+        <can_mutate_page>false</can_mutate_page>
+        <category display_value="Server">317c4dc20b202200a8d7a12cf6673aa8</category>
+        <class_name/>
+        <class_type>script</class_type>
+        <deprecated>false</deprecated>
+        <description_generator><![CDATA[function generateDescription() {
+    // the global variable 'step' represents the current glide record
+    var description = "The approval Record for the task will be "+step.inputs.u_approval_action.getDisplayValue();
+	// your code here
+	return description;
+}
+ generateDescription();
+]]></description_generator>
+        <html_description><![CDATA[<p>Approval on Server side for one approval or rejection</p>]]></html_description>
+        <icon>icon-article-document</icon>
+        <inputs/>
+        <name>V1.2.0 Single Server Approval / Rejection</name>
+        <order>2000</order>
+        <outputs/>
+        <step_env display_value="Server - Independent">6c2bcea1870312009dccc9ded0e3ecca</step_env>
+        <step_execution_generator><![CDATA[(function executeStep(inputs, outputs, stepResult, timeout) {
+    var testApp = inputs.u_task.toString();
+    var appAction = inputs.u_approval_action;
+    try {
+        var appSc = new x_172493_jit_atf.JITAtfUtils().singleServerApproval(testApp, appAction);
+        if (appSc == true) {
+            stepResult.setOutputMessage('Success!' + appAction);
+            stepResult.setSuccess();
+            return;
+        } else {
+            stepResult.setOutputMessage('Failure! No Approval Record found');
+            stepResult.setFailed();
+            return;
+        }
+    } catch (e) {
+        stepResult.setOutputMessage('Failure! exception caught.');
+        stepResult.setFailed();
+        return;
+
+    }
+
+}(inputs, outputs, stepResult, timeout));]]></step_execution_generator>
+        <sys_class_name>sys_atf_step_config</sys_class_name>
+        <sys_created_by>shubhendra.singh</sys_created_by>
+        <sys_created_on>2020-04-13 15:41:54</sys_created_on>
+        <sys_id>bd2511d31b489010b70431d7dc4bcbd2</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>V1.2.0 Single Server Approval / Rejection</sys_name>
+        <sys_package display_value="JIT ATF Configurator" source="x_172493_jit_atf">a95f321e1b841010b70431d7dc4bcb50</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JIT ATF Configurator">a95f321e1b841010b70431d7dc4bcb50</sys_scope>
+        <sys_update_name>sys_atf_step_config_bd2511d31b489010b70431d7dc4bcbd2</sys_update_name>
+        <sys_updated_by>shubhendra.singh</sys_updated_by>
+        <sys_updated_on>2020-04-16 23:00:50</sys_updated_on>
+        <template_reminder>Single Server Approval / Rejection</template_reminder>
+        <type display_value="Test Step" name="sys_atf_step">d3ccc615983500107f2c2ed01a1f16e4</type>
+        <wizard_redirect/>
+    </sys_atf_step_config>
+    <sys_translated_text action="delete_multiple" query="documentkey=bd2511d31b489010b70431d7dc4bcbd2"/>
+    <sys_variable_value action="delete_multiple" query="document_key=bd2511d31b489010b70431d7dc4bcbd2"/>
+</record_update>

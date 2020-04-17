@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_172493_jit_atf_test_case" version="2" view="sys_ref_list">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>number</element>
+            <list_id display_value="x_172493_jit_atf_test_case" element="NULL" name="x_172493_jit_atf_test_case" parent="NULL" relationship="NULL" sys_domain="global" view="73570251983100107f2c2ed01a1f16bc">6f0245c81b141410b70431d7dc4bcb4d</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>shubhendra.singh</sys_created_by>
+            <sys_created_on>2020-04-15 22:13:54</sys_created_on>
+            <sys_id>2b0245c81b141410b70431d7dc4bcb4e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>shubhendra.singh</sys_updated_by>
+            <sys_updated_on>2020-04-15 22:13:54</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>suite</element>
+            <list_id display_value="x_172493_jit_atf_test_case" element="NULL" name="x_172493_jit_atf_test_case" parent="NULL" relationship="NULL" sys_domain="global" view="73570251983100107f2c2ed01a1f16bc">6f0245c81b141410b70431d7dc4bcb4d</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>shubhendra.singh</sys_created_by>
+            <sys_created_on>2020-04-15 22:13:54</sys_created_on>
+            <sys_id>ab0245c81b141410b70431d7dc4bcb4e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>shubhendra.singh</sys_updated_by>
+            <sys_updated_on>2020-04-15 22:13:54</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>title</element>
+            <list_id display_value="x_172493_jit_atf_test_case" element="NULL" name="x_172493_jit_atf_test_case" parent="NULL" relationship="NULL" sys_domain="global" view="73570251983100107f2c2ed01a1f16bc">6f0245c81b141410b70431d7dc4bcb4d</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>shubhendra.singh</sys_created_by>
+            <sys_created_on>2020-04-15 22:13:54</sys_created_on>
+            <sys_id>2f0245c81b141410b70431d7dc4bcb4e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>shubhendra.singh</sys_updated_by>
+            <sys_updated_on>2020-04-15 22:13:54</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>description</element>
+            <list_id display_value="x_172493_jit_atf_test_case" element="NULL" name="x_172493_jit_atf_test_case" parent="NULL" relationship="NULL" sys_domain="global" view="73570251983100107f2c2ed01a1f16bc">6f0245c81b141410b70431d7dc4bcb4d</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>shubhendra.singh</sys_created_by>
+            <sys_created_on>2020-04-15 22:13:54</sys_created_on>
+            <sys_id>af0245c81b141410b70431d7dc4bcb4e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>shubhendra.singh</sys_updated_by>
+            <sys_updated_on>2020-04-15 22:13:54</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_172493_jit_atf_test_case</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>shubhendra.singh</sys_created_by>
+            <sys_created_on>2020-04-15 22:13:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6f0245c81b141410b70431d7dc4bcb4d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_172493_jit_atf_test_case</sys_name>
+            <sys_package display_value="JIT ATF Configurator" source="x_172493_jit_atf">a95f321e1b841010b70431d7dc4bcb50</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="JIT ATF Configurator">a95f321e1b841010b70431d7dc4bcb50</sys_scope>
+            <sys_update_name>sys_ui_list_x_172493_jit_atf_test_case_sys_ref_list</sys_update_name>
+            <sys_updated_by>shubhendra.singh</sys_updated_by>
+            <sys_updated_on>2020-04-15 22:13:54</sys_updated_on>
+            <sys_user/>
+            <view display_value="Reference List" name="sys_ref_list">73570251983100107f2c2ed01a1f16bc</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

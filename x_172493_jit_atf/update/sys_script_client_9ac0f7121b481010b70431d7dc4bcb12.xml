@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>type</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Field Visibility</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (newValue == '') {
+        g_form.setMandatory('catalog_item', false);
+        g_form.setValue('catalog_item', '');
+        g_form.setDisplay('catalog_item', false);
+        g_form.setValue('field_values', '');
+        g_form.setDisplay('field_values', false);
+        g_form.setValue('requested_for', '');
+        g_form.setDisplay('requested_for', false);
+        g_form.setMandatory('table', false);
+        g_form.setValue('table', '');
+        g_form.setDisplay('table', false);
+        g_form.setValue('variable_json', '');
+        g_form.setDisplay('variable_json', false);
+    } else if (newValue == 'service_catalog') {
+        g_form.setDisplay('catalog_item', true);
+        g_form.setMandatory('catalog_item', true);
+        g_form.setValue('field_values', '');
+        g_form.setDisplay('field_values', false);
+        g_form.setDisplay('requested_for', true);
+        g_form.setMandatory('table', false);
+        g_form.setValue('table', '');
+        g_form.setDisplay('table', false);
+        g_form.setDisplay('variable_json', true);
+    } else if (newValue == 'table') {
+
+        g_form.setMandatory('catalog_item', false);
+        g_form.setValue('catalog_item', '');
+        g_form.setDisplay('catalog_item', false);
+        g_form.setDisplay('field_values', true);
+        g_form.setValue('requested_for', '');
+        g_form.setDisplay('requested_for', false);
+        g_form.setDisplay('table', true);
+        g_form.setMandatory('table', true);
+        g_form.setValue('variable_json', '');
+        g_form.setDisplay('variable_json', false);
+    }
+
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-11 00:28:17</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9ac0f7121b481010b70431d7dc4bcb12</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Field Visibility</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="JIT ATF Configurator" source="x_172493_jit_atf">a95f321e1b841010b70431d7dc4bcb50</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JIT ATF Configurator">a95f321e1b841010b70431d7dc4bcb50</sys_scope>
+        <sys_update_name>sys_script_client_9ac0f7121b481010b70431d7dc4bcb12</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-11 14:24:38</sys_updated_on>
+        <table>x_172493_jit_atf_test_case</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>
